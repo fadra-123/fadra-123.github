@@ -1,2 +1,2 @@
-# fadra-123.github
+# fadra-123.github.io
 Сайт по Web-Технологиям
