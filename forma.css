@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between; /* Разделяем элементы */
+    gap: 10px; /* Расстояние между картинкой и текстом */
+}
+header a {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Расстояние между логотипом и текстом */
+    text-decoration: none;
+    color: white;
+}
+.logo {
+    width: 50px; /* Размер логотипа */
+    height: 50px;
+}
+.container {
+    background-color: white;
+    padding: 20px; /* Внутренние отступы */
+    border-radius: 5px; /* Скругленные углы */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 97.2%;
+    height: 600px;
+    margin: auto;
+}
+
+/* Стили для заголовка формы */
+h2 {
+    text-align: center;
+}
+/* Стили для меток (label) */
+label {
+    display: block; /* Каждая метка занимает всю ширину строки */
+    margin-bottom: 5px; /* Отступ снизу */
+}
+/* Стили для текстовых полей и поля email */
+input[type="text"], input[type="email"] {
+    width: 50%; /* Ширина полей ввода */
+    padding: 10px; 
+    margin-bottom: 15px; /* Отступ снизу */
+    border: 1px solid #ccc; /* Граница полей ввода */
+    border-radius: 4px; /* Скругленные углы */
+}
+/* Стили для контейнера текстового поля (textarea) */
+.textarea-container {
+    position: relative; /* Для позиционирования подсказки */
+    width: 60%; /* Ширина совпадает с шириной textarea */
+    margin-bottom: 15px;
+}
+/* Стили для текстового поля (textarea) */
+.textarea-container textarea {
+    width: 100%; /* Занимает всю ширину контейнера */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    height: 100px; /* Высота текстового поля */
+    resize: none; /* Запрет изменения размера */
+}
+/* Стили для подсказки о максимальном количестве слов */
+.textarea-container small {
+    position: absolute;
+    right: 10px; /* Отступ от правого края контейнера */
+    bottom: 10px; /* Отступ от нижнего края контейнера */
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.5); /* Полупрозрачный текст */
+}
+/* Стили для кнопки отправки */
+button {
+    width: 10%; /* Ширина кнопки */
+    padding: 10px; /* Внутренние отступы */
+    background-color: #007BFF;
+    color: white;
+    border: none; /* Убираем границу */
+    border-radius: 4px; /* Скругленные углы */
+    cursor: pointer; /* Указатель мыши при наведении */
+}
+
+/* Стили для кнопки при наведении */
+button:hover {
+    background-color: #0056b3; /* Более темный цвет фона */
+}
+
+footer {
+    position: fixed; /* Закрепляет footer внизу окна */
+    bottom: 0;
+    left: 0;
+    height: 35px; /* Высота footer */
+    width: 100%; /* Растягивает footer на всю ширину */
+    background-color: #333; /* Цвет фона */
+    color: white; /* Цвет текста */
+    display: flex; /* Включаем flexbox */
+    align-items: center; /* Центрируем текст по вертикали */
+    padding: 10px 0; /* Отступы сверху и снизу */
+    padding-left: 15px; /* Отступ текста слева */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Тень сверху */
+    font-size: 14px; /* Размер шрифта */
+}
+footer nav {
+    display: flex;
+    gap: 15px; /* Расстояние между ссылками */
+}
+footer nav a {
+    text-decoration: none;
+    color: #007bff;
+}

@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+header {
+    display: flex;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    align-items: center; /* Центрирование по вертикали */
+    justify-content: space-between; /* Разделяем элементы */
+    gap: 10px; /* Расстояние между картинкой и текстом */
+}
+/* Стили для ссылки на главную страницу */
+header a {
+    display: flex;
+    align-items: center; /* Центрирование по вертикали */
+    gap: 10px; /* Расстояние между логотипом и текстом */
+    text-decoration: none; /* Убираем подчеркивание */
+    color: white;
+}
+/* Стили для поля ввода в шапке */
+header input[type="text"] {
+    padding: 10px;
+    width: 200px; /* Ширина поля ввода */
+    border: 1px solid #ccc; /* Граница поля ввода */
+    border-radius: 5px;
+}
+header button{
+    padding: 10px 15px;
+    background-color: #6a5acd;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.logo {
+    width: 50px; /* Размер логотипа */
+    height: 50px; /* Высота логотипа */
+}
+/* Стили для блока информации об игре */
+.game-info {
+    background-color: white;
+    width: 97.2%; /* Устанавливаем ширину на всю страницу */
+    height: 575px; /* Устанавливаем высоту */
+    padding: 20px; 
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+/* Стили для деталей игры */
+.game-details {
+    display: flex;
+    justify-content: space-between; /* Разделяем элементы */
+}
+/* Стили для изображения игры */
+.game-image {
+    width: 40%; /* Устанавливаем ширину для изображения */
+    display: flex;
+    justify-content: center; /* Центрируем изображение по горизонтали */
+    align-items: center; /* Центрируем изображение по вертикали */
+}
+
+/* Стили для самого изображения */
+.game-image img {
+    width: 100%; /* Изображение займет всю ширину контейнера */
+    height: 100%; /* Сохраняет пропорции изображения */
+    border-radius: 8px; /* Добавляет скругленные углы (опционально) */
+}
+
+/* Стили для блока системных требований */
+.requirements {
+    display: flex; /* Включаем flexbox для размещения колонок */
+    justify-content: space-between; /* Разделяем колонки */
+    gap: 20px; /* Расстояние между колонками */
+}
+/* Стили для каждой колонки системных требований */
+.requirements .column {
+    width: 48%; /* Каждая колонка занимает 48% ширины */
+    background-color: #f9f9f9; /* Фон для колонок (опционально) */
+    padding: 15px; /* Внутренние отступы */
+    border-radius: 8px; /* Скругленные углы */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Легкая тень */
+}
+/* Стили для заголовков в колонках */
+.requirements h3 {
+    margin-bottom: 10px; /* Отступ под заголовком */
+    color: #333;
+}
+/* Стили для списков системных требований */
+.requirements ul {
+    list-style-type: none; /* Убираем маркеры списка */
+    padding: 0; /* Убираем отступы */
+}
+/* Стили для пунктов списка */
+.requirements li {
+    margin-bottom: 5px; /* Отступ между пунктами списка */
+    color: #555;
+}
+/* Стили для текста под системными требованиями */
+.game-info p {
+    margin-top: 20px; /* Отступ сверху для текста */
+    color: #555; /* Цвет текста (опционально) */
+    font-size: 16px; /* Размер шрифта (опционально) */
+    text-align: center; /* Центрирование текста (опционально) */
+}
+footer {
+    position: fixed; /* Закрепляет footer внизу окна */
+    bottom: 0;
+    left: 0;
+    width: 100%; /* Растягивает footer на всю ширину */
+    height: 50px; /* Устанавливаем фиксированную высоту */
+    background-color: #333; /* Цвет фона */
+    color: white; /* Цвет текста */
+    display: flex; /* Включаем flexbox */
+    align-items: center; /* Центрируем текст по вертикали */
+    padding-left: 15px; /* Отступ текста слева */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Тень сверху */
+    font-size: 14px; /* Размер шрифта */
+}
+
+footer nav {
+    display: flex;
+    gap: 15px; /* Расстояние между ссылками */
+}
+
+footer nav a {
+    text-decoration: none;
+    color: #007bff;
+}
