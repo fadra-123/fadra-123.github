@@ -8,31 +8,53 @@
     <title>PC System Requirements Checker</title>
     <!-- Подключение файла стилей -->
     <link rel="stylesheet" href="index.css">
+    <script src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <!-- Логотип сайта -->
-        <img src="images/логотип.png" alt="Логотип"/>
-        <h1>PC System Requirements Checker</h1>
+        <div class="logo-title">
+            <!-- Логотип и название сайта -->
+            <img src="images/логотип.png" alt="Логотип" class="logo">
+            <span class="site-title">PC System Requirements Checker</span>
+            <a href="index.html" class="home-link">На главную</a>
+        </div>
     </header>
     <div class="container">
         <!-- Подзаголовок с описанием функционала сайта -->
         <h2>Узнайте минимальные и рекомендуемые требования для любой игры</h2>
         <div class="search-box">
             <!-- Поле для ввода названия игры -->
-            <input type="text" placeholder="Введите игру для поиска...">
+            <input type="text" id ="search-input" placeholder="Введите игру для поиска...">
             <!-- Кнопка для перехода на страницу с результатами поиска -->
             <button onclick="location.href='game_finded.html'">Поиск</button>
+            <!-- Выпадающий список с играми -->
+            <div class="dropdown-games" id="dropdown-games"></div>
         </div>
         <div class="popular-games">
             <!-- Заголовок списка популярных игр -->
             <h3>Список популярных игр:</h3>
-            <!-- Список популярных игр -->
-            <ul>
-                <li>Cyberpunk 2077</li>
-                <li>Elden Ring</li>
-                <li>Counter-Strike 2</li>
-            </ul>
+            <!-- Список популярных игр с картинками -->
+            <div class="game-list">
+                <div class="game-item">
+                    <a href="game_finded.html?game=cyberpunk">
+                        <img src="images/cyberpunk.jpg" alt="Cyberpunk 2077" class="game-image">
+                        <p>Cyberpunk 2077</p>
+                    </a>
+                </div>
+                <div class="game-item">
+                    <a href="game_finded.html?game=elden-ring">
+                        <img src="images/elden_ring.jpg" alt="Elden Ring" class="game-image">
+                        <p>Elden Ring</p>
+                    </a>
+                </div>
+                <div class="game-item">
+                    <a href="game_finded.html?game=cs2">
+                        <img src="images/cs2.jpg" alt="Counter-Strike 2" class="game-image">
+                        <p>Counter-Strike 2</p>
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
     <footer>

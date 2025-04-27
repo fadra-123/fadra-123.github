@@ -5,13 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Поиск игры</title>
     <link rel="stylesheet" href="game_finded.css">
+    <script src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <!-- Ссылка на главную страницу с логотипом -->
-        <a href="index.html">
-            <img src="images/логотип.png" alt="Логотип" class="logo"> На главную
-        </a>
+        <!-- Логотип и название сайта -->
+        <div class="logo-title">
+            <img src="images/логотип.png" alt="Логотип" class="logo">
+            <span class="site-title">PC System Requirements Checker</span>
+            <a href="index.html" class="home-link">На главную</a>
+        </div>
+        <!-- Блок поиска -->
         <div class="search-box">
             <!-- Поле для ввода названия игры -->
             <input type="text" placeholder="Поиск игр">
@@ -51,11 +56,6 @@
                     </div>
                 </div>
             </div>
-            <!-- Описание будущей функциональности с API для отзывов -->
-            <p>
-                Тут будет указана ссылка на отзывы со steam или с другой платформы,
-                где находится эта игра. Будет все это работать через API.
-            </p>
         </section>
     </main>
     <footer>
